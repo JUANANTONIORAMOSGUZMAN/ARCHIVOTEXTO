@@ -43,26 +43,35 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Elephant", 2, 24)); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(51, 51, 255));
+        jLabel1.setFont(new java.awt.Font("Juice ITC", 2, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setText("MANEJO DE ARCHIVOS DE TEXTO");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(51, 51, 255));
+        jLabel2.setFont(new java.awt.Font("Traditional Arabic", 3, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 51, 51));
         jLabel2.setText("INGRESA TU NOMBRE: ");
 
+        txtNombre.setBackground(new java.awt.Color(255, 51, 51));
         txtNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombreActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Sylfaen", 3, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(51, 255, 51));
         jLabel3.setText("CONTENIDO EN EL ARCHIVO:");
 
+        txtContenido.setBackground(new java.awt.Color(51, 255, 51));
         txtContenido.setColumns(20);
         txtContenido.setRows(5);
         jScrollPane1.setViewportView(txtContenido);
 
-        btnGrabar.setFont(new java.awt.Font("Arial", 3, 24)); // NOI18N
+        btnGrabar.setBackground(new java.awt.Color(255, 51, 51));
+        btnGrabar.setFont(new java.awt.Font("Aparajita", 3, 24)); // NOI18N
+        btnGrabar.setForeground(new java.awt.Color(255, 255, 255));
         btnGrabar.setText("GRABAR");
         btnGrabar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,7 +79,9 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnMostrar.setFont(new java.awt.Font("Arial", 3, 24)); // NOI18N
+        btnMostrar.setBackground(new java.awt.Color(51, 255, 51));
+        btnMostrar.setFont(new java.awt.Font("Batang", 3, 24)); // NOI18N
+        btnMostrar.setForeground(new java.awt.Color(255, 255, 255));
         btnMostrar.setText("MOSTRAR");
         btnMostrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,22 +109,22 @@ public class FrmPrincipal extends javax.swing.JFrame {
                                 .addGap(71, 71, 71)
                                 .addComponent(btnGrabar))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel1)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                        .addGap(178, 178, 178)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(21, 21, 21)
                 .addComponent(jLabel1)
-                .addGap(44, 44, 44)
+                .addGap(34, 34, 34)
                 .addComponent(jLabel2)
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnGrabar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
